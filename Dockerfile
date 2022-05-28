@@ -11,8 +11,5 @@ COPY Cargo.toml .
 # Build release application
 RUN cargo build --release
 
-# Expose listening port for application
-EXPOSE 8080
-
 # Run the application
 CMD ["target/release/restapiwebservice"]
