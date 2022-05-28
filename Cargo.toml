@@ -1,0 +1,17 @@
+[package]
+name = "randomapi"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "random" 
+path = "src/lib.rs" 
+
+[[bin]]
+name = "restapiwebservice"
+path = "src/bin/main.rs"
+
+[dependencies]
+hyper = "0.13"
+tokio = { version = "0.2", features = ["full"] }
+serde_json = "1.0"
